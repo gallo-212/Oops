@@ -1,0 +1,250 @@
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+   background-image: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 80%);
+
+	background-repeat: repeat;
+    background-size: auto;      /* copre tutta la pagina */
+    background-position: top;   
+		
+}
+
+
+.navbar img{
+	position:fixed;
+}
+	
+.navbar .logo{
+
+width: 21%;
+left:145px;
+
+}
+
+.navbar .icon{
+
+width: 7%;
+left:1200px;
+margin-top: 20px;
+z-index: 10;
+
+}
+
+.navbar {
+    position: fixed;             /* resta sopra il contenuto */
+    top: 0;
+    left: 0;
+	border-left: 30px;
+    width: 70%;
+    height: 150px;
+    background: var(--gradient-primary);
+   background-image: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 80%);
+    z-index: 10; 	/* sopra il background */
+  border-bottom: 2px solid black;
+    text-align: center;
+	border-bottom-left-radius: 30% 40px;
+  border-bottom-right-radius: 40% 100px;
+  
+}
+
+
+
+.navbar2_3 {
+    position: fixed;             /* resta sopra il contenuto */
+    top: 0;
+	right: 0;
+    width: 40%;
+    height: 150px;
+   background: var(--gradient-primary);
+   background-image: linear-gradient(135deg,rgb(118, 75, 162) 40%,rgb(102, 126, 234) 100%);
+    z-index: 9;                 /* sopra il background */
+    border-bottom: 2px solid black;
+    text-align: center;
+	 border-bottom-left-radius: 50% 80px;
+  border-bottom-right-radius: 30% 30px;
+}
+
+.navbar_search {
+    position: fixed;             /* resta sopra il contenuto */
+    margin-top:30px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    background-color: #ba55d3; /* semitrasparente se vuoi vedere un po' il background sotto */
+    z-index: 8;                 /* sopra il background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+	border-bottom: 1px solid black;
+
+
+
+}
+
+
+
+.navbar_search h2{
+
+ margin-top: 140px;
+margin-right: 50px;
+margin-left: 50px;
+padding-bottom:50px;
+padding-left:30px;
+padding-right:30px;
+padding-top:30px;
+width: 33%;
+font-size:25px;
+justify-content: center;
+align-items: center;
+text-align:center;
+ text-decoration: none;
+ color:black;
+
+}
+
+.navbar_search h2:hover {
+
+  
+ background-color: #d17ef0;x
+	font-size:30px;
+
+}
+
+
+
+.contenuto{
+position:relative;
+padding-top: 250px;
+}
+
+
+.contenuto h1{
+position:absolute;
+margin-top: 10px;
+z-index:-3;
+margin-left: 430px;
+font-size: 100px;
+
+
+}
+
+.cloud{
+	position:relative;
+	z-index:2;
+	padding: 20px;
+	display: inline-block;
+	width: 20%;
+
+	
+
+}
+
+
+.cloud1{
+	
+}
+
+.cloud2{
+	
+	margin-left:180px;
+	
+}
+
+.cloud3{
+	margin-left: 160px;
+
+}
+
+.cloud4{
+
+	margin-top: 100px;
+	margin-left: 180px;
+	
+}
+
+.cloud5{
+	margin-left: 340px;
+	
+}
+
+.cloud:hover{
+	
+	width:21%;
+
+}
+
+
+	
+	
+
+
+
+.box-link {
+  /* rimuove sottolineatura */
+  
+}
+
+
+
+
+/*.navbar_search h2:hover .box{
+
+    border-bottom-left-radius: 50% 100px;
+    border-bottom-right-radius: 50% 100px;
+    height: 120px;
+   background-color: #ba55d3; 
+	font-size:35px;
+	
+}
+*/
+
+/*
+.chat-container {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-box {
+    height: 300px;
+    padding: 15px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    text-align: right;
+}
+
+.ai-message {
+    background-color: #ffecb3;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+*/

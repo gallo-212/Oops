@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: linear-gradient(135deg, #764ba2, #667eea);
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    #downloadBtn {
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    #downloadBtn:hover {
+      background-color: #45a049;
+    }
+
+    #progressContainer {
+      width: 80%;
+      height: 30px;
+      background-color: rgba(255,255,255,0.3);
+      margin: 40px auto;
+      border-radius: 15px;
+      display: none; /* inizialmente nascosta */
+    }
+
+    #progressBar {
+      height: 100%;
+      width: 0%;
+      background-color: #ffffff;
+      border-radius: 15px;
+      text-align: center;
+      line-height: 30px;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<img src="./../IMMAGINI/foto/app.png">
+
+<h1>Try our app!</h1>
+
+<button id="downloadBtn">Enter</button>
+
+<div id="progressContainer">
+  <div id="progressBar">0%</div>
+</div>
+
+<script>
+  const button = document.getElementById('downloadBtn');
+  const container = document.getElementById('progressContainer');
+  const bar = document.getElementById('progressBar');
+
+  button.addEventListener('click', () => {
+    button.style.display = 'none'; // nasconde il bottone
+    container.style.display = 'block'; // mostra la barra
+
+    let width = 0;
+    const interval = setInterval(() => {
+      if(width >= 100){
+        clearInterval(interval);
+        // quando il download finisce, apri la pagina principale
+        window.location.href = "Oops.html"; 
+      } else {
+        width++;
+        bar.style.width = width + '%';
+        bar.textContent = width + '%';
+      }
+    }, 50); // circa 5 secondi per completare il finto download
+  });
+</script>
+
+</body>
+</html>
